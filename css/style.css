@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  text-decoration: unset;
+}
+
+* {
+  border: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 3fr) 1fr;
+  grid-template-rows: 10vh minmax(90vh, auto) 10vh;
+  grid-template-areas:
+    'header header header'
+    'aside-left main aside-right'
+    'footer footer footer';
+}
+
+header {
+  grid-area: header;
+  background-color: #0f100f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecedee;
+}
+
+.aside-left {
+  grid-area: aside-left;
+  background-color: #454043;
+  text-align: center;
+  color: #ecedee;
+}
+
+.aside-right {
+  grid-area: aside-right;
+  background-color: #454043;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ecedee;
+}
+
+main {
+  grid-area: main;
+  background-color: #ecedee ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #0f100f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecedee;
+}
+.typer-lixo {
+  display: flex;
+  align-items: start;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  height: 1rem;
+}
+.typer {
+ 
+  background-color: #f7f7f8;
+  border-radius: 3rem;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  height: 100%;
+  transition: all 0.5s;
+}
+.lixo {
+  margin-left: 0.5rem;
+  background-color: #e03724;
+  border-radius: 3rem;
+  padding: 12px;
+  height: 100%;
+  width: auto;
+  transition: all 0.5s;
+}
+.lixo:hover, .typer:hover {
+  padding: 15px;
+}
+.lixo:hover {
+  background-color: #be2f2f;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+img {
+  width: 70%;
+}
+.top {
+  width: 48%;
+}
+.bottom {
+  width: 50%;
+}
+
+.typed-ingredients {
+  width: 40%;
+}
+.typed-ingredients button {
+  border-radius: 3rem;
+  padding: 0.5rem 0 0.5rem 0;
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  background-color: #57d194;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.typed-ingredients button:hover {
+  padding: 1rem;
+  background-color: #277447;
+}
+.timer-div {
+  display: flex;
+  width: 80%;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-img {
+  height: 80%;
+  margin-right: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
